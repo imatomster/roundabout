@@ -44,8 +44,8 @@ function Map() {
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ 
-            height: `60vh`,
-            margin: `10% 10%`,                   
+            height: `80vh`,
+            margin: `3vh 10vh`,                   
           }} />}
           mapElement={<div style={{ height: `100%` }} />}
           
