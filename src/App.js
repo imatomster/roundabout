@@ -1,7 +1,11 @@
+import Map from "./Map"
+import Navbar from "./Navbar"
+
 function App() {
   return (
-    <div className="App">
-
+    <div className="App">      
+      <Navbar/>      
+      <Map/>
     </div>
   );
 }
