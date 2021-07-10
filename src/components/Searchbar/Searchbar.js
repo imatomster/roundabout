@@ -1,4 +1,6 @@
 import React from 'react'
+import './Searchbar.css'
+
 
 const Searchbar = () => {
     return (
@@ -8,7 +10,7 @@ const Searchbar = () => {
                     type="text" 
                     placeholder="Search Location..."
                     id="location-container">
-                </input>
+                </input>                
             </form>
         </div>
     )

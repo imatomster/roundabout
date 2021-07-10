@@ -1,5 +1,13 @@
 #location-container {
     width: 80vw;
     height: 4vh;
-    margin: 0vw 10vh;
+    margin: 0vh 8.5vw;
+    border: 1px solid black;
+    border-radius: 10px;    
+    font-family: "nunito";
+    font-size: 18px;
+}
+
+#location-container[type=text]:focus {
+    outline: none;
 }
