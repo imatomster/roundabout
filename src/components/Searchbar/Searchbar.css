@@ -1,7 +1,14 @@
-#location-container {
+.form-container {
+    display: flex; 
+    position: absolute;
     width: 80vw;
     height: 4vh;
-    margin: 0vh 8.5vw;
+    margin: 0vh 10vw;
+    justify-content: space-between;
+}
+
+#location-container {
+    width: 100vw;
     border: 1px solid black;
     border-radius: 10px;    
     font-family: "nunito";
@@ -10,4 +17,11 @@
 
 #location-container[type=text]:focus {
     outline: none;
+}
+
+#search-icon {
+    position: relative; 
+    right: 3vw;
+    top: 0.65vh;
+    font-size: 20px;
 }

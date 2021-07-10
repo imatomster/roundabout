@@ -45,7 +45,7 @@ function Map() {
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ 
             height: `80vh`,
-            margin: `3vh 10vh`,                   
+            margin: `8vh 10vw`,                   
           }} />}
           mapElement={<div style={{ height: `100%` }} />}
           
