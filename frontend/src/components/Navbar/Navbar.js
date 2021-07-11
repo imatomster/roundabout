@@ -10,12 +10,12 @@ const Navbar = () => {
                     <div className="menu">
                     <button className="dropbtn"><h2>Menu</h2></button>
                         <div className="menu_content">
-                            <div className="notif"><NavLink to="/"><h2>Notifications</h2></NavLink></div>
-                            <div className="about"><NavLink to="/"><h2>About</h2></NavLink></div>
-                            <div className="friends"><NavLink to="/"><h2>Friends</h2></NavLink></div>
+                            <div className="notif"><NavLink to="/notif"><h2>Notifications</h2></NavLink></div>
+                            <div className="about"><NavLink to="/about"><h2>About</h2></NavLink></div>
+                            <div className="friends"><NavLink to="/friends"><h2>Friends</h2></NavLink></div>
                         </div>
                     </div>
-                <div className="login"><NavLink to="/register"><h2>Login</h2></NavLink></div>
+                <div className="login"><NavLink to="/login"><h2>Login</h2></NavLink></div>
 
                 </div> 
         </div>

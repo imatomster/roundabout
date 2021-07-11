@@ -2,7 +2,7 @@ import React, { useState, Component } from "react";
 import "./App.css";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
 
 import Map from "./components/Map/Map";
 import Navbar from "./components/Navbar/Navbar";
@@ -24,7 +24,7 @@ function App() {
         </div>
 
         <Switch>
-          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
         </Switch>
         
       </div>
