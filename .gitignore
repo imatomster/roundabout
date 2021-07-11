@@ -23,5 +23,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# testng sashido - tommy
-/src/services
+# for backend
+.DS_Store
+node_modules
+.cache
+/backend/logs
+/backend/cloud
+.env
