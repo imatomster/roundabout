@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-.App{
+*{
     margin:0px;
 }
-=======
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
->>>>>>> a279d38983dd8aeb2b06fd5cc1ac5bb3dddd4a3b
 .hero-container {
     display: flex;
     margin: 9vh 5vw;
