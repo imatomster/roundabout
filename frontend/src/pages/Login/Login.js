@@ -3,7 +3,7 @@ import React from 'react'
 export default function Login() {
     return (
         <div>
-            hi
+            This is log in page
         </div>
     )
 }

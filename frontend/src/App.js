@@ -15,19 +15,21 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
-        <Banner />
-        <Descript/>
-        <Searchbar />
+      <Route path='/' exact render={(props) => (
+        <>
+          <Navbar />
+          <Banner />
+          <Descript/>
+          <Searchbar />
 
-        <div className="hero-container">
-          <FriendList />
-          <Map />
-        </div>
+          <div className="hero-container">
+            <FriendList />
+            <Map />
+          </div>
+        </>
+      )} />
 
-        <Switch>
-          <Route path="/login" component={Login} />
-        </Switch>
+      <Route path="/login" component={Login} />
         
       </div>
     </BrowserRouter>
