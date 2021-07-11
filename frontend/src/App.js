@@ -7,14 +7,11 @@ import React, {useState} from 'react'
 
 function App() {
 
-  const [destination, setDestination] = useState('')
 
   return (
     <div className="App">      
       <Navbar/>      
       <Searchbar
-        destiantion={destination}
-        setDestination={setDestination}
       />                
       <div className="hero-container">
         <FriendList/>

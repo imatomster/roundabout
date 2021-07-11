@@ -45,7 +45,7 @@ function Map() {
     return (
       <div>        
         <MapWithAMarker
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAk7MGBYPtxGw5RZMZjdUVudTEsDYAUNw&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100vh`}} />}
           containerElement={<div style={{ 
             height: `75vh`,
