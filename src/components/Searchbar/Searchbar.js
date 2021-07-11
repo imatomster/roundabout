@@ -1,25 +1,29 @@
 import React from 'react'
 import './Searchbar.css'
 import {FaSistrix, FaSyncAlt} from 'react-icons/fa'
+import AutoComplete from 'react-google-autocomplete'
 
 
-const Searchbar = () => {
+const Searchbar = (destination, setDestination) => {
+
     return (
         <div>
-            <form className="form-container">
-                <input 
-                    type="text" 
-                    placeholder="Search Location..."
-                    id="location-container">                                                             
-                </input>                                       
+            <div className="form-container">
+                <AutoComplete
+                    id="location-container"
+                    placeHolder="Enter A Location..."
+                    AutoComplete="off"                        
+
+                    />                  
                 <FaSistrix 
                     id="search-icon"
-                    onClick={() => console.log("clicked search")}
+                    onClick={() => console.log(destination)}
+                    
                 />   
                 <FaSyncAlt 
                     id="refresh-icon"
-                    onClick={() => console.log("refresh clicked")}/>                       
-            </form>          
+                    onClick={() => console.log("refresh clicked")}/>                                   
+            </div>
         </div>
     )
 }

@@ -10,12 +10,13 @@
 #location-container {
     width: 100vw;
     border: 1px solid black;
-    border-radius: 10px;    
+    border-radius: 5px;    
     font-family: "nunito";
     font-size: 18px;
+    color: black
 }
 
-#location-container[type=text]:focus {
+#location-container:focus {
     outline: none;
 }
 

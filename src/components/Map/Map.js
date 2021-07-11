@@ -6,22 +6,26 @@ import {
   GoogleMap,
   Marker,
 } from "react-google-maps";
+import "./Map.css"
 
 
 function Map() {
-
-    const [isOpen, setIsOpen] = useState(true)  
   
+    const [isOpen, setIsOpen] = useState(true)      
+    
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
+
+
       <GoogleMap
         defaultZoom={12}
         defaultCenter={{ lat: 37.740460, lng: -122.496730}}
       >
         <Marker
-          position={{ lat: 37.740460, lng: -122.496730 }}   
+          id="marker"
+          position={{ lat: 37.740460, lng: -122.496730 }}     
           onClick={() => {
             setIsOpen(true)
-          }} 
+          }}           
         >
           {isOpen && 
             <InfoWindow
@@ -42,13 +46,13 @@ function Map() {
       <div>        
         <MapWithAMarker
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%`}} />}
+          loadingElement={<div style={{ height: `100vh`}} />}
           containerElement={<div style={{ 
             height: `75vh`,
             width: `100vh`            
           }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-          
+          mapElement={<div style={{ height: `100%` }} />}   
+      
         />
       </div>
     );
