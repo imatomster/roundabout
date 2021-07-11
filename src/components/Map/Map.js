@@ -42,10 +42,11 @@ function Map() {
       <div>        
         <MapWithAMarker
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
+          loadingElement={<div style={{ height: `100%`}} />}
           containerElement={<div style={{ 
             height: `80vh`,
-            margin: `8vh 10vw`,                   
+            margin: `6.3vh 10vw`,
+            width: `80vh`                   
           }} />}
           mapElement={<div style={{ height: `100%` }} />}
           

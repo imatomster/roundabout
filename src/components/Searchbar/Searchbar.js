@@ -1,6 +1,6 @@
 import React from 'react'
 import './Searchbar.css'
-import {FaSistrix} from 'react-icons/fa'
+import {FaSistrix, FaSyncAlt} from 'react-icons/fa'
 
 
 const Searchbar = () => {
@@ -12,8 +12,15 @@ const Searchbar = () => {
                     placeholder="Search Location..."
                     id="location-container">                                                             
                 </input>                                       
-                <FaSistrix id="search-icon"/>                        
+                <FaSistrix 
+                    id="search-icon"
+                    onClick={() => console.log("clicked search")}
+                />                        
+                <FaSyncAlt 
+                    id="refresh-icon"
+                    onClick={() => console.log("refresh clicked")}/>
             </form>
+
             
         </div>
     )

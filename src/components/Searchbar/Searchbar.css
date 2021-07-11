@@ -21,7 +21,18 @@
 
 #search-icon {
     position: relative; 
-    right: 3vw;
-    top: 0.65vh;
-    font-size: 20px;
+    right: 2vw;
+    top: 0.22vh;
+    font-size: 25px;
+}
+
+#refresh-icon {
+    width: 2.5vw;
+    height: 2.5vh;
+    padding: 5px;
+    border: 1px solid black;    
+    position: relative;     
+    bottom: 0.1vh;
+    border-radius: 12px;
+    background-color:#F5F5F5;
 }
