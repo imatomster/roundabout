@@ -1,8 +1,9 @@
 .navbar-container {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    background-color:darkolivegreen;
+    flex-flow:row;
+    align-items:center;
+    background-color:darkcyan;
+
    
 
 }
@@ -14,8 +15,12 @@
     
 }
 /*our logo, just a link back to itself, needs our pic*/
+.rightside-navbar{
+    justify-content:right;
+    background-color: red;
+}
 .menu{
-    float:right;
+    justify-content: center;
     overflow:hidden;
 
 }
@@ -27,6 +32,7 @@
     border:none;
     outline:none;
     background-color:beige;
+    
 }
 
 /*button's color*/
@@ -35,6 +41,7 @@
     position:absolute;
     min-width: 120px;
     z-index:1;
+
 }
 
 .menu_content a{
