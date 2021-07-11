@@ -9,12 +9,14 @@ import Navbar from "./components/Navbar/Navbar";
 import Searchbar from "./components/Searchbar/Searchbar";
 import FriendList from "./components/FriendList/FriendList";
 import Descript from "./components/Description/Descript";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
+        <Banner />
         <Descript/>
         <Searchbar />
 
