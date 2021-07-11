@@ -3,22 +3,65 @@
     flex-flow: row wrap;
     align-items: center;
     background-color:darkolivegreen;
+   
 
 }
-
+/*the whole navbar*/
 .logo{
     margin:10px;
     padding:20px;
     font-size:30px;
     
 }
+/*our logo, just a link back to itself, needs our pic*/
+.menu{
+    float:right;
+    overflow:hidden;
+
+}
+/*understand this^*/
+.menu .dropbtn{
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    border:none;
+    outline:none;
+    background-color:beige;
+}
+
+/*button's color*/
+.menu_content{
+    display: none;
+    position:absolute;
+    min-width: 120px;
+    z-index:1;
+}
+
+.menu_content a{
+    float: none;
+    color: black;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+}
+
+.menu_content a:hover{
+    background-color: red;
+}
+
+.menu:hover .menu_content{
+    display:block;
+    background-color: aliceblue;
+}
 
 .login{
     margin:10px;
     padding:20px;
     font-size:30px;
+    float:right;
     
 }
+/*
 
 .notif{
     margin:10px;
@@ -40,3 +83,4 @@
     font-size:30px;
     
 }
+*/
