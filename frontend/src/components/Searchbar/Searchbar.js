@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Searchbar.css'
 import {FaSistrix, FaSyncAlt} from 'react-icons/fa'
+import Geocode from "react-geocode"
 import AutoComplete from 'react-google-autocomplete'
 
 
@@ -19,15 +20,15 @@ const Searchbar = () => {
                 className="form-container"
                 onSubmit={handleSubmit}
             >
-                <AutoComplete
+                <AutoComplete 
                     id="location-container"
-                    placeHolder="Enter A Location..."
-                    AutoComplete="off"                      
+                    placeHolder="Enter A Location..."   
+                    AutoComplete="off"                                      
                     onChange={(e) => {
                         setDestination(e.target.value)
                     }}
                     value={destination}  
-                    />                  
+                    />        
                 <FaSistrix 
                     id="search-icon"                    
                     onClick={() => {
