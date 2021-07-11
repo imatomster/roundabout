@@ -1,6 +1,6 @@
 .navbar-container {
     display: flex;
-    flex-flow:row;
+    flex-flow: row nowrap;
     align-items:center;
     background-color:darkcyan;
 
