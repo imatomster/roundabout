@@ -4,7 +4,11 @@ import {FaSistrix, FaSyncAlt} from 'react-icons/fa'
 import AutoComplete from 'react-google-autocomplete'
 
 
-const Searchbar = (destination, setDestination) => {
+const Searchbar = ({destination, setDestination}) => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
         <div>
@@ -13,7 +17,9 @@ const Searchbar = (destination, setDestination) => {
                     id="location-container"
                     placeHolder="Enter A Location..."
                     AutoComplete="off"                        
-
+                    onChange={(e) => {
+                        setDestination(e.target.value)
+                    }}
                     />                  
                 <FaSistrix 
                     id="search-icon"
