@@ -1,20 +1,22 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () => {
     return (
         <div className="navbar-container">
-                <div className="logo"><a href="/"><h1>Roundabout</h1></a></div>
+                <div className="logo"><NavLink to="/"><h1>Roundabout</h1></NavLink></div>
                 <div className="rightside-navbar">
                     <div className="menu">
                     <button className="dropbtn"><h2>Menu</h2></button>
                         <div className="menu_content">
-                            <div className="notif"><a href="https://youtu.be/yPYZpwSpKmA"><h2>Notifications</h2></a></div>
-                            <div className="about"><a href="/"><h2>About</h2></a></div>
-                            <div className="friends"><a href="/"><h2>Friends</h2></a></div>
+                            <div className="notif"><NavLink to="/"><h2>Notifications</h2></NavLink></div>
+                            <div className="about"><NavLink to="/"><h2>About</h2></NavLink></div>
+                            <div className="friends"><NavLink to="/"><h2>Friends</h2></NavLink></div>
                         </div>
                     </div>
-                <div className="login"><a href="https://youtu.be/dQw4w9WgXcQ"><h2>Login</h2></a></div>
+                <div className="login"><NavLink to="/register"><h2>Login</h2></NavLink></div>
+
                 </div> 
         </div>
      

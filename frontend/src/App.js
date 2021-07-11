@@ -1,23 +1,32 @@
-import Map from "./components/Map/Map"
-import Navbar from "./components/Navbar/Navbar"
-import Searchbar from "./components/Searchbar/Searchbar"
-import "./App.css"
-import FriendList from "./components/FriendList/FriendList"
-import React, {useState} from 'react'
+import React, { useState, Component } from "react";
+import "./App.css";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Register from "./pages/Register/Register";
+
+import Map from "./components/Map/Map";
+import Navbar from "./components/Navbar/Navbar";
+import Searchbar from "./components/Searchbar/Searchbar";
+import FriendList from "./components/FriendList/FriendList";
 
 function App() {
-
-
   return (
-    <div className="App">      
-      <Navbar/>      
-      <Searchbar
-      />                
-      <div className="hero-container">
-        <FriendList/>
-        <Map />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Searchbar />
+
+        <div className="hero-container">
+          <FriendList />
+          <Map />
+        </div>
+
+        <Switch>
+          <Route path="/register" component={Register} />
+        </Switch>
+        
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
