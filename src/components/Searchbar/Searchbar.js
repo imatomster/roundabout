@@ -15,13 +15,11 @@ const Searchbar = () => {
                 <FaSistrix 
                     id="search-icon"
                     onClick={() => console.log("clicked search")}
-                />                        
+                />   
                 <FaSyncAlt 
                     id="refresh-icon"
-                    onClick={() => console.log("refresh clicked")}/>
-            </form>
-
-            
+                    onClick={() => console.log("refresh clicked")}/>                       
+            </form>          
         </div>
     )
 }

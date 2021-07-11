@@ -1,11 +1,15 @@
 import React from 'react'
+import {FaUserTie, FaSyncAlt} from 'react-icons/fa'
+import './FriendList.css'
 
 const FriendList = () => {
-    return (
+    return (        
         <div className="friendlist-container">
-            <div className="title-container">
-                <p>Friends</p>
-
+            <div className="table-head">
+                <div className="title">
+                    Friends
+                </div>
+                <FaUserTie className="man-in-tie"/>
             </div>
         </div>
     )

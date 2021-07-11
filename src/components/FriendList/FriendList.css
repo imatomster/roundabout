@@ -1,0 +1,17 @@
+.friendlist-container {
+    width: 60vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 1vw 0 1vw;
+}
+
+.table-head {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.title, .man-in-tie {
+    font-size: 20px;
+    margin: 2vh 1.5vw;    
+}

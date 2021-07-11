@@ -2,9 +2,3 @@
     display: flex;
     margin: 9vh 5vw;
 }
-
-.friendlist-container {
-    width: 60vw;
-    background-color: aqua;
-    margin: 0 1vw 0 1vw;
-}
