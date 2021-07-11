@@ -4,17 +4,31 @@ import {FaSistrix, FaSyncAlt} from 'react-icons/fa'
 import AutoComplete from 'react-google-autocomplete'
 
 
-const Searchbar = (destination, setDestination) => {
+const Searchbar = ({destination, setDestination}) => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
         <div>
-            <div className="form-container">
+            <div 
+                className="form-container"
+                onSubmit={handleSubmit}
+                >
                 <AutoComplete
                     id="location-container"
-                    placeHolder="Enter A Location..."
-                    AutoComplete="off"                        
+                    type="text"
+                    id="location-container"
+                    placeholder="Enter A Location..."
+                    AutoComplete="off"
+                    onChange={(e) => {
+                        e.preventDefault();
+                        setDestination(e.target.value)
+                    }}
+                    value={destination}                       
 
-                    />                  
+                    />                                                  
                 <FaSistrix 
                     id="search-icon"
                     onClick={() => console.log(destination)}

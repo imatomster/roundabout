@@ -24,7 +24,7 @@ function Map() {
           id="marker"
           position={{ lat: 37.740460, lng: -122.496730 }}     
           onClick={() => {
-            setIsOpen(true)
+            setIsOpen(true)            
           }}           
         >
           {isOpen && 
@@ -42,19 +42,17 @@ function Map() {
       </GoogleMap>
     ));
   
-    return (
-      <div>        
-        <MapWithAMarker
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100vh`}} />}
-          containerElement={<div style={{ 
-            height: `75vh`,
-            width: `100vh`            
-          }} />}
-          mapElement={<div style={{ height: `100%` }} />}   
-      
-        />
-      </div>
+    return (      
+      <MapWithAMarker
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOa5o8jCU5bqRDRlUEXvV5rcecOE-AFKs&v=3.exp&libraries=geometry,drawing,places"
+        loadingElement={<div style={{ height: `100vh`}} />}
+        containerElement={<div style={{ 
+          height: `75vh`,
+          width: `100vh`            
+        }} />}
+        mapElement={<div style={{ height: `100%` }} />}   
+    
+      />      
     );
   }
   
