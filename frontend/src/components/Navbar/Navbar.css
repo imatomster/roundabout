@@ -1,14 +1,14 @@
 .navbar-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items:center;
-    background-color:darkcyan;
-
-   
+    background-color:rgba(195, 195, 195, 0.5);
+    justify-content: space-between;
 
 }
-/*the whole navbar*/
+/*the whole navbar^*/
 .logo{
+    display:flex;
     margin:10px;
     padding:20px;
     font-size:30px;
@@ -16,22 +16,38 @@
 }
 /*our logo, just a link back to itself, needs our pic*/
 .rightside-navbar{
-    justify-content:right;
-    background-color: red;
+    display:flex;
+    flex-flow: row nowrap;
+    
+    background-color: rgba(195, 195, 195, 0);
+
 }
 .menu{
-    justify-content: center;
     overflow:hidden;
 
 }
+
+.login{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+   
+    
+}
+
+a{
+    text-decoration: none;
+}
 /*understand this^*/
+/*everything below is for the dropdown menu*/
 .menu .dropbtn{
     font-size: 30px;
     margin: 10px;
     padding: 20px;
     border:none;
     outline:none;
-    background-color:beige;
+    background-color:rgba(195, 195, 195, 0.7);
+    border-radius: 15px;
     
 }
 
@@ -53,21 +69,14 @@
 }
 
 .menu_content a:hover{
-    background-color: red;
+    background-color: rgba(180, 180, 180, 1);
 }
 
 .menu:hover .menu_content{
     display:block;
-    background-color: aliceblue;
+    background-color: rgba(195, 195, 195, 0.7);
 }
 
-.login{
-    margin:10px;
-    padding:20px;
-    font-size:30px;
-    float:right;
-    
-}
 /*
 
 .notif{
