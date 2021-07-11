@@ -39,7 +39,7 @@ router.post("/user/signup", async (req, res) => {
       });
 });
 
-router.get("/user/login", async (req, res) => {
+router.post("/user/login", async (req, res) => {
   var username = req.body.username;
   var password = req.body.password;
   
@@ -54,6 +54,10 @@ router.get("/user/login", async (req, res) => {
         // error is a Parse.Error with an error code and message.
         console.error("Error message:", error.message);
     });
+});
+
+router.get("/test", async (req, res) => {
+  res.send('hello world');
 });
 
 export default router;
