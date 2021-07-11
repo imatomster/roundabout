@@ -1,4 +1,42 @@
 .navbar-container {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    background-color:darkolivegreen;
+
+}
+
+.logo{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    
+}
+
+.login{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    
+}
+
+.notif{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    
+}
+
+.about{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    
+}
+
+.friends{
+    margin:10px;
+    padding:20px;
+    font-size:30px;
+    
 }
