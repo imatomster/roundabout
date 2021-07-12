@@ -20,6 +20,12 @@ function App() {
   const [destination, setDestination] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const [finalLocation, setFinalLocation] = useState('')
+  const [locations, setLocations] = useState([
+    {lat: 37.75, lng: -122.490001, name: "Dmytro Budym"},
+    {lat: 37.73, lng:-122.4194, name: "Danila Fetisov"},
+    {lat: 37.77, lng:-122.45, name: "Rafael Cenzaro"},
+    {lat: 37.75, lng: -122.4, name: "Siarhei Yakushevich"}
+])
 
   return (
     <BrowserRouter>
@@ -39,7 +45,9 @@ function App() {
             finalLocation = {finalLocation}
             setFinalLocation = {setFinalLocation}
             isOpen = {isOpen}
-            setIsOpen = {setIsOpen}   
+            setIsOpen = {setIsOpen}  
+            locations = {locations}
+            setLocations = {setLocations}   
           />
 
           <div className="hero-container">
@@ -52,7 +60,8 @@ function App() {
               destination = {destination}  
               finalLocation = {finalLocation}  
               isOpen = {isOpen}
-              setIsOpen = {setIsOpen}          
+              setIsOpen = {setIsOpen}  
+              locations = {locations}          
             />
           </div>
         </>
