@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaUserTie, FaSyncAlt} from 'react-icons/fa'
 import './FriendList.css'
+import FakeFriends from './FakeFriends'
 
 const FriendList = () => {
     return (        
@@ -10,6 +11,12 @@ const FriendList = () => {
                     Friends
                 </div>
                 <FaUserTie className="man-in-tie"/>
+            </div>
+            <FakeFriends
+            />
+
+            <div>
+
             </div>
         </div>
     )

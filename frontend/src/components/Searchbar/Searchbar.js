@@ -42,6 +42,7 @@ const Searchbar = ({currLat, currLng,setCurrLat,
                     onChange={(e) => {
                         setDestination(e.target.value)
                     }}
+                    on
                     value={destination}  
                     />        
                 <FaSistrix 
@@ -50,6 +51,7 @@ const Searchbar = ({currLat, currLng,setCurrLat,
                         geoCode()
                         setFinalLocation(destination) 
                         setIsOpen(true)
+                        console.log(geoCode())
                     }}
                     
                 />   

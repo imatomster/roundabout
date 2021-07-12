@@ -17,6 +17,7 @@ function App() {
   const [destination, setDestination] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const [finalLocation, setFinalLocation] = useState('')
+  const [locIndex, setLocIndex] = useState(0)
 
   return (
     <BrowserRouter>
@@ -40,7 +41,7 @@ function App() {
           />
 
           <div className="hero-container">
-            <FriendList />
+            <FriendList/>
             <Map 
               currLat = {currLat}
               currLng = {currLng}
@@ -49,7 +50,9 @@ function App() {
               destination = {destination}  
               finalLocation = {finalLocation}  
               isOpen = {isOpen}
-              setIsOpen = {setIsOpen}          
+              setIsOpen = {setIsOpen}    
+              locIndex = {locIndex}
+              setLocIndex={setLocIndex}      
             />
           </div>
         </>

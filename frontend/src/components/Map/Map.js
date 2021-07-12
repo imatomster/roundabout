@@ -7,19 +7,20 @@ import {
   Marker,
 } from "react-google-maps";
 import "./Map.css"
-
+import FriendMarker from "./FriendMarker"
 
 function Map({currLat, currLng, setCurrLat, 
-              setCurrLng, destination, finalLocation, isOpen, setIsOpen}) {
-     
-    
+              setCurrLng, destination, finalLocation, isOpen, setIsOpen,
+              locIndex, setLocIndex}) {
+
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
 
 
-      <GoogleMap
-        defaultZoom={12}
-        defaultCenter={{ lat: currLat, lng: currLng}}
-      >
+    <GoogleMap
+      defaultZoom={12}
+      defaultCenter={{ lat: currLat, lng: currLng}}
+    >
+
         <Marker
           id="marker"
           position={{ lat: currLat, lng: currLng }}     
@@ -39,6 +40,9 @@ function Map({currLat, currLng, setCurrLat,
               </div>
           </InfoWindow>}
         </Marker>
+        <FriendMarker>
+          
+        </FriendMarker>
       </GoogleMap>
     ));
   
@@ -52,7 +56,7 @@ function Map({currLat, currLng, setCurrLat,
             width: `100vh`            
           }} />}
           mapElement={<div style={{ height: `100%` }} />}   
-      
+          
         />
       </div>
     );
