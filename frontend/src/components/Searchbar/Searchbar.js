@@ -12,15 +12,6 @@ const Searchbar = ({currLat, currLng,setCurrLat,
         e.preventDefault()
     }
 
-    const makeCloser = () => {
-        setLocations([
-            {lat: 37.75, lng: -122.490001, name: "Dmytro Budym"},
-            {lat: 37.73, lng:-122.4194, name: "Danila Fetisov"},
-            {lat: 37.77, lng:-122.45, name: "Rafael Cenzaro"},
-            {lat: 37.75, lng: -122.4, name: "Siarhei Yakushevich"}
-        ])
-    }
-
     Geocode.setApiKey("AIzaSyBAk7MGBYPtxGw5RZMZjdUVudTEsDYAUNw")
 
     const geoCode = () => {
@@ -66,6 +57,14 @@ const Searchbar = ({currLat, currLng,setCurrLat,
                 />   
                 <FaSyncAlt 
                     id="refresh-icon"
+                    onClick={() => {
+                        setLocations([
+                            {lat: 37.7694208, lng: -122.4862138, name: "Dmytro Budym"},
+                            {lat: 37.7509806, lng:-122.4640397, name: "Danila Fetisov"},
+                            {lat: 37.7749, lng:-122.4194, name: "Rafael Cenzaro"},
+                            {lat: 37.76158179, lng: -122.4479845, name: "Siarhei Yakushevich"}
+                        ])
+                    }}
                 />                                           
             </form> 
         </div>
