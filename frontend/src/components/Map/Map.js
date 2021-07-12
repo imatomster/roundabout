@@ -11,7 +11,7 @@ import FriendMarker from "./FriendMarker"
 
 function Map({currLat, currLng, setCurrLat, 
               setCurrLng, destination, finalLocation, isOpen, setIsOpen,
-              locIndex, setLocIndex}) {
+              locIndex, setLocIndex, locations, setLocations}) {
 
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
 
@@ -40,7 +40,9 @@ function Map({currLat, currLng, setCurrLat,
               </div>
           </InfoWindow>}
         </Marker>
-        <FriendMarker>
+        <FriendMarker 
+          locations = {locations}
+          setLocations = {setLocations}>
           
         </FriendMarker>
       </GoogleMap>

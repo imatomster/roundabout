@@ -6,10 +6,19 @@ import AutoComplete from 'react-google-autocomplete'
 
 
 const Searchbar = ({currLat, currLng,setCurrLat, 
-    setCurrLng, destination, setDestination, finalLocation, setFinalLocation, isOpen, setIsOpen}) => {
+    setCurrLng, destination, setDestination, finalLocation, setFinalLocation, isOpen, setIsOpen, locations, setLocations}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+    }
+
+    const makeCloser = () => {
+        setLocations([
+            {lat: 37.75, lng: -122.490001, name: "Dmytro Budym"},
+            {lat: 37.73, lng:-122.4194, name: "Danila Fetisov"},
+            {lat: 37.77, lng:-122.45, name: "Rafael Cenzaro"},
+            {lat: 37.75, lng: -122.4, name: "Siarhei Yakushevich"}
+        ])
     }
 
     Geocode.setApiKey("AIzaSyBAk7MGBYPtxGw5RZMZjdUVudTEsDYAUNw")
@@ -57,8 +66,8 @@ const Searchbar = ({currLat, currLng,setCurrLat,
                 />   
                 <FaSyncAlt 
                     id="refresh-icon"
-                    onClick={() => console.log("refresh clicked")}/>                                   
-            </form>
+                />                                           
+            </form> 
         </div>
     )
 }
