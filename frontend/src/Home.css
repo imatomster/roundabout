@@ -3,7 +3,7 @@
 }
 .hero-container {
     display: flex;
-    margin: 9vh 5vw;
+    margin: 9vh 5vw 0vh 5vw;
     
     background-color: rgb(255, 250, 240);
 }
