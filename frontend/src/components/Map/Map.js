@@ -9,20 +9,20 @@ import {
 import "./Map.css"
 
 
-function Map() {
-  
-    const [isOpen, setIsOpen] = useState(true)      
+function Map({currLat, currLng, setCurrLat, 
+              setCurrLng, destination, finalLocation, isOpen, setIsOpen}) {
+     
     
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
 
 
       <GoogleMap
         defaultZoom={12}
-        defaultCenter={{ lat: 37.740460, lng: -122.496730}}
+        defaultCenter={{ lat: currLat, lng: currLng}}
       >
         <Marker
           id="marker"
-          position={{ lat: 37.740460, lng: -122.496730 }}     
+          position={{ lat: currLat, lng: currLng }}     
           onClick={() => {
             setIsOpen(true)
           }}           
@@ -35,7 +35,7 @@ function Map() {
                 }
               }}>                  
               <div>
-                Curdis House
+                {finalLocation}
               </div>
           </InfoWindow>}
         </Marker>

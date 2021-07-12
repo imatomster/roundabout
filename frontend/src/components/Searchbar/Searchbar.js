@@ -5,12 +5,27 @@ import Geocode from "react-geocode"
 import AutoComplete from 'react-google-autocomplete'
 
 
-const Searchbar = () => {
-
-    const [destination, setDestination] = useState('')
+const Searchbar = ({currLat, currLng,setCurrLat, 
+    setCurrLng, destination, setDestination, finalLocation, setFinalLocation, isOpen, setIsOpen}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+    }
+
+    Geocode.setApiKey("AIzaSyBAk7MGBYPtxGw5RZMZjdUVudTEsDYAUNw")
+
+    const geoCode = () => {
+        Geocode.fromAddress(destination).then(
+            (response) => {
+                const {lat, lng} = response.results[0].geometry.location;
+                setCurrLat(lat)
+                setCurrLng(lng)
+                console.log(currLat, currLng)
+            },
+            (error) => {
+                console.log(error)
+            }
+        )
     }
 
 
@@ -32,7 +47,10 @@ const Searchbar = () => {
                 <FaSistrix 
                     id="search-icon"                    
                     onClick={() => {
-                        console.log(destination)}}
+                        geoCode()
+                        setFinalLocation(destination) 
+                        setIsOpen(true)
+                    }}
                     
                 />   
                 <FaSyncAlt 

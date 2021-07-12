@@ -12,6 +12,13 @@ import Descript from "./components/Description/Descript";
 import Banner from "./components/Banner/Banner";
 
 function App() {
+
+  const [currLat, setCurrLat] = useState(37.7749)
+  const [currLng, setCurrLng] = useState(-122.4194)
+  const [destination, setDestination] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
+  const [finalLocation, setFinalLocation] = useState('')
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -20,11 +27,31 @@ function App() {
           <Navbar />
           <Banner />
           <Descript/>
-          <Searchbar />
+          <Searchbar 
+            currLat = {currLat}
+            currLng = {currLng}
+            setCurrLat = {setCurrLat}
+            setCurrLng = {setCurrLng}
+            destination = {destination}
+            setDestination = {setDestination}
+            finalLocation = {finalLocation}
+            setFinalLocation = {setFinalLocation}
+            isOpen = {isOpen}
+            setIsOpen = {setIsOpen}   
+          />
 
           <div className="hero-container">
             <FriendList />
-            <Map />
+            <Map 
+              currLat = {currLat}
+              currLng = {currLng}
+              setCurrLat = {setCurrLat}
+              setCurrLng = {setCurrLng}
+              destination = {destination}  
+              finalLocation = {finalLocation}  
+              isOpen = {isOpen}
+              setIsOpen = {setIsOpen}          
+            />
           </div>
         </>
       )} />
