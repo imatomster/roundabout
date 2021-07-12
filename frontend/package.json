@@ -2,7 +2,6 @@
   "name": "roundabout-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.4",

@@ -1,8 +1,9 @@
 import React, { useState, Component } from "react";
 import "./App.css";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";
 import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 
 import Map from "./components/Map/Map";
 import Navbar from "./components/Navbar/Navbar";
@@ -57,6 +58,7 @@ function App() {
       )} />
 
       <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
         
       </div>
     </BrowserRouter>
