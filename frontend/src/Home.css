@@ -1,0 +1,8 @@
+*{
+    margin:0px;
+}
+.hero-container {
+    display: flex;
+    margin: 9vh 5vw;
+}
+

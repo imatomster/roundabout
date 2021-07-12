@@ -46,6 +46,10 @@
     border-radius: 10px;
 }
 
+.submit:hover {
+    cursor: pointer;
+}
+
 .footer {
     font-size: 18px;
 }

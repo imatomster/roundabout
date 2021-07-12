@@ -45,3 +45,7 @@
     color: white;
     border-radius: 10px;
 }
+
+.submit:hover {
+    cursor: pointer;
+}

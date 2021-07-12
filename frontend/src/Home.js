@@ -1,10 +1,7 @@
 import React, { useState, Component } from "react";
-import "./App.css";
+import "./Home.css";
 
 import { BrowserRouter, Route} from "react-router-dom";
-import Login from "./pages/Login/Login";
-import Signup from "./pages/Signup/Signup";
-import Home from "./Home";
 
 import Map from "./components/Map/Map";
 import Navbar from "./components/Navbar/Navbar";
@@ -24,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <Route path='/' exact render={(props) => (
+      <Route path='/home' exact render={(props) => (
         <>
           <Navbar />
           <Banner />
@@ -58,9 +55,7 @@ function App() {
         </>
       )} />
 
-      <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
-      <Route path="/home" component={Home} />
+      {/* <Route path="/login" component={Login} /> */}
         
       </div>
     </BrowserRouter>
