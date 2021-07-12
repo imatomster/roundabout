@@ -1,4 +1,5 @@
 import React from 'react'
+import './Descript.css'
 
 const Descript = () => {
     return (

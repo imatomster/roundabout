@@ -1,3 +1,13 @@
 .description{
-    background-image: url(https://cdn.discordapp.com/attachments/862773218900181043/863914194378031114/8bt9Zn1.png);
+    display:flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 50px;
+    background-color: rgba(195, 195, 195, 0.7);
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
 }

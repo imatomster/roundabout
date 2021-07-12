@@ -1,10 +1,12 @@
 .navbar-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items:center;
     background-color:rgba(195, 195, 195, 0.5);
     justify-content: space-between;
-
+    z-index:1;
+    position:fixed;
+    width:100%;
 }
 /*the whole navbar^*/
 .logo{
@@ -18,7 +20,6 @@
 .rightside-navbar{
     display:flex;
     flex-flow: row nowrap;
-    
     background-color: rgba(195, 195, 195, 0);
 
 }
@@ -56,7 +57,7 @@ a{
     display: none;
     position:absolute;
     min-width: 120px;
-    z-index:1;
+    z-index:2;
 
 }
 
