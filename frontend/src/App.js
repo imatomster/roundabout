@@ -9,7 +9,6 @@ import Home from "./Home";
 import Map from "./components/Map/Map";
 import Navbar from "./components/Navbar/Navbar";
 import Searchbar from "./components/Searchbar/Searchbar";
-import FriendList from "./components/FriendList/FriendList";
 import Descript from "./components/Description/Descript";
 import Banner from "./components/Banner/Banner";
 
@@ -43,7 +42,6 @@ function App() {
           />
 
           <div className="hero-container">
-            <FriendList />
             <Map 
               currLat = {currLat}
               currLng = {currLng}

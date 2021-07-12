@@ -10,7 +10,7 @@ import FriendList from "./components/FriendList/FriendList";
 import Descript from "./components/Description/Descript";
 import Banner from "./components/Banner/Banner";
 
-function App() {
+function Home() {
 
   const [currLat, setCurrLat] = useState(37.7749)
   const [currLng, setCurrLng] = useState(-122.4194)
@@ -74,4 +74,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
