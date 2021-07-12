@@ -35,7 +35,7 @@ export default function Signup() {
                 <input type="text" className="box" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} name="password"></input>
                 <input type="text" className="box" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)} name="email"></input>
                 <input type="text" className="box" placeholder="Phone" value={phone} onChange={(e)=>setPhone(e.target.value)} name="phone"></input>
-                <NavLink to="/login"><input type="submit" className="submit" value="Sign up!"></input></NavLink>
+                <input type="submit" className="submit" value="Sign up!"></input>
             </form>
         </div>
     )

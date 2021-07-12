@@ -10,8 +10,8 @@ const Navbar = () => {
                 <div className="titleContainer">
                     <div className="title">
                         <NavLink to="/home" className="navlinker">
-                            <img src={logo} alt="icon" />
-                            Roundabout
+                            <img src={logo} alt="icon"/>
+                            <div>Roundabout</div>
                         </NavLink>
                     </div>
                 </div>
