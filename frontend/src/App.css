@@ -1,6 +1,7 @@
-*{
-    margin:0px;
+.App{
+    background-color: rgb(255, 250, 240);;
 }
+
 .hero-container {
     display: flex;
     margin: 9vh 5vw;

@@ -1,0 +1,7 @@
+.backgroundBanner {
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(200, 191, 231);
+
+    border-bottom: 3px solid black;
+}
