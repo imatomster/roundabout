@@ -51,3 +51,24 @@ ReactDOM.render(
 <b> Running on local machine </b>  
 - Source: https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
 - Run `yarn run deploy` or `npm run deploy` to update and push to gh-pages branch
+
+## Project Folder Structure
+```project
+│   .git
+│   .gitignore
+│   LICENCE
+│   ...
+│
+└───backend
+│   │   server.js
+│   │   ...
+│
+└───docs
+│   │   README.md
+│   │   todo.md
+│   │   ...
+│
+└───frontend
+    │   index.js
+    │   ...
+```
