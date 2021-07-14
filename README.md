@@ -7,7 +7,7 @@ More information can be found in our `README.md` in the docs folder and the foll
 
 - [HTF Devpost](https://devpost.com/software/roundabout-15tjze?ref_content=my-projects-tab&ref_feature=my_projects)
 
-- [YouTude Demo](https://www.youtube.com/watch?v=RRYLrw9YdNw)
+- [YouTube Demo](https://www.youtube.com/watch?v=RRYLrw9YdNw)
 
 # Devpost Description
 ## 🤩 Inspiration
